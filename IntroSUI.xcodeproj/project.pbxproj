@@ -29,6 +29,7 @@
 		1055135728D9C4E8000F8F7A /* Lists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1055135628D9C4E8000F8F7A /* Lists.swift */; };
 		1055135928DA0189000F8F7A /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1055135828DA0189000F8F7A /* Alerts.swift */; };
 		1078702728E4396C001B03B3 /* TextEditors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1078702628E4396C001B03B3 /* TextEditors.swift */; };
+		1078702928E4466C001B03B3 /* Toggles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1078702828E4466C001B03B3 /* Toggles.swift */; };
 		107C52E128B22FCE00228F7C /* SafeAreas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107C52E028B22FCE00228F7C /* SafeAreas.swift */; };
 		108CED6728B7CBDA0019B63A /* Bindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108CED6628B7CBDA0019B63A /* Bindings.swift */; };
 		108F99C828AE55B3004481D5 /* Grids.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108F99C728AE55B3004481D5 /* Grids.swift */; };
@@ -70,6 +71,7 @@
 		1055135628D9C4E8000F8F7A /* Lists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lists.swift; sourceTree = "<group>"; };
 		1055135828DA0189000F8F7A /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		1078702628E4396C001B03B3 /* TextEditors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditors.swift; sourceTree = "<group>"; };
+		1078702828E4466C001B03B3 /* Toggles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toggles.swift; sourceTree = "<group>"; };
 		107C52E028B22FCE00228F7C /* SafeAreas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreas.swift; sourceTree = "<group>"; };
 		108CED6628B7CBDA0019B63A /* Bindings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindings.swift; sourceTree = "<group>"; };
 		108F99C728AE55B3004481D5 /* Grids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grids.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				10487FCE28DB272F00F85279 /* ContextMenus.swift */,
 				10A493ED28E3047100E975C0 /* TextFields.swift */,
 				1078702628E4396C001B03B3 /* TextEditors.swift */,
+				1078702828E4466C001B03B3 /* Toggles.swift */,
 				100F9BCA288415B000A6126F /* Assets.xcassets */,
 				100F9BCC288415B000A6126F /* Preview Content */,
 			);
@@ -245,6 +248,7 @@
 				1012F23928AD1FB3003D1B01 /* ForEachPrint.swift in Sources */,
 				10177B5928CDC8CA0051FCA9 /* PopOver.swift in Sources */,
 				10487FCF28DB272F00F85279 /* ContextMenus.swift in Sources */,
+				1078702928E4466C001B03B3 /* Toggles.swift in Sources */,
 				101A911928AB9A66002287BA /* Spacersss.swift in Sources */,
 				10908EC328AA432D002E71C7 /* Stacks.swift in Sources */,
 				10A493EE28E3047100E975C0 /* TextFields.swift in Sources */,
