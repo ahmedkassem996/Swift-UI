@@ -9,7 +9,12 @@ import SwiftUI
 
 struct SwiftUIView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Hello!")
+            .fontWeight(.heavy)
+//            .strikethrough(true, color: .red)
+//            .underline(true, color: .red)
+//            .kerning(10)
+//            .minimumScaleFactor(0.1)
     }
 }
 

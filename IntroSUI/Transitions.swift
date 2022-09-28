@@ -8,9 +8,35 @@
 import SwiftUI
 
 struct Transitions: View {
+    
+    @State var showView: Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                
+        ZStack(alignment: .bottom) {
+            VStack {
+                Button("Press"){
+                    showView.toggle()
+                }
+                
+                Spacer()
+                
+            }
+            
+            if showView {
+                RoundedRectangle(cornerRadius: 30)
+                     .frame(height: UIScreen.main.bounds.height * 0.5)
+     //                .opacity(showView ? 1.0 : 0.0)
+                     .transition(.move(edge: .bottom))
+                     .animation(.easeInOut)
+            }
+           
+                
+        }
+        .edgesIgnoringSafeArea(.bottom)
+        
     }
+        
 }
 
 struct Transitions_Previews: PreviewProvider {

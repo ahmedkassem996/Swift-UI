@@ -8,8 +8,30 @@
 import SwiftUI
 
 struct Conditions: View {
+    
+    @State var showCircle: Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            
+            Button {
+                showCircle.toggle()
+            } label: {
+                if showCircle {
+                    ProgressView()
+                } else {
+                    Text("no")
+                }
+//                Text("\(showCircle.description)")
+            }
+            
+            Spacer()
+                .frame(width: 140, height: 20)
+                .background(showCircle ? Color.red : Color.orange)
+        }
+        
+        
+        
     }
 }
 

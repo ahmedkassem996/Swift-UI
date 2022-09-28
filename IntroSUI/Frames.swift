@@ -9,7 +9,12 @@ import SwiftUI
 
 struct Frames: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Hello, World!")
+            .background(Color.green)
+            .frame(width: 300, height: 300, alignment: .topLeading)
+            .background(Color.red)
+            .frame(maxWidth: .infinity)
+            .background(Color.blue)
     }
 }
 

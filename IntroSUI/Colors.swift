@@ -9,12 +9,27 @@ import SwiftUI
 
 struct Colors: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        RoundedRectangle(cornerRadius: 25.0)
+            .fill(
+//                Color.orange
+//                Color.primary
+//                Color(UIColor.secondarySystemBackground)
+                Color("MainColor")
+                
+            )
+            .frame(width: 300, height: 150)
+//            .shadow(radius: 20)
+            .shadow(color: Color.red.opacity(0.3), radius: 10, x: -12, y: -12)
+            
     }
 }
 
 struct Colors_Previews: PreviewProvider {
     static var previews: some View {
         Colors()
+            
+            
+            
+            
     }
 }

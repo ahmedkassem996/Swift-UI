@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Spacer: View {
+struct Spacersss: View {
     var body: some View {
         HStack(spacing: 200) {
             Spacer()
@@ -25,8 +25,8 @@ struct Spacer: View {
     }
 }
 
-struct Spacer_Previews: PreviewProvider {
+struct Spacersss_Previews: PreviewProvider {
     static var previews: some View {
-        Spacer()
+        Spacersss()
     }
 }

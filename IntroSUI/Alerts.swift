@@ -8,9 +8,34 @@
 import SwiftUI
 
 struct Alerts: View {
+    
+    @State var showAlert: Bool = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        ZStack {
+            
+            Color.yellow
+                .ignoresSafeArea(.all)
+            
+            Button("Click Here") {
+                showAlert.toggle()
+            }
+            .alert(isPresented: $showAlert) {
+                getAlert()
+            }
+        }
+        
     }
+    
+    func getAlert() -> Alert {
+       return Alert(
+        title: Text("This is the title"),
+          message: Text("Here we will describe the error"),
+        primaryButton: .destructive(Text("Delete")),
+        secondaryButton: .cancel())
+    }
+    
 }
 
 struct Alerts_Previews: PreviewProvider {

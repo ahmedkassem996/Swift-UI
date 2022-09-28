@@ -9,7 +9,10 @@ import SwiftUI
 
 struct SafeAreas: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Hello, World!")
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color.green)
+            .edgesIgnoringSafeArea(.all)
     }
 }
 

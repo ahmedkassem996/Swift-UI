@@ -9,7 +9,15 @@ import SwiftUI
 
 struct Icons: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Image(systemName: "heart")
+//            .renderingMode(.original)
+//            .resizable()
+//            .font(.largeTitle)
+//            .font(.system(size: 20))
+//            .foregroundColor(.red)
+//            .frame(width: 200, height: 200)
+//            .aspectRatio(contentMode: .fit)
+//            .scaledToFit()
     }
 }
 

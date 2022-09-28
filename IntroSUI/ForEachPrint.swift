@@ -7,16 +7,34 @@
 
 import SwiftUI
 
-struct ForEach: View {
+struct ForEachPrint: View {
+    
+    let data: [String] = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"]
+    let myString = "Number is: "
+    
     var body: some View {
-        VStack {
-            foreach
+        VStack (alignment: .leading, spacing: 30){
+            ForEach(0..<10) { index in
+                HStack {
+                    ZStack {
+                        Circle()
+                            .frame(width: 50, height: 50)
+                            .foregroundColor(Color.red)
+                        Text("\(index)")
+                            .foregroundColor(Color.white)
+                            .font(.largeTitle)
+                    }
+                    Text("\(myString)\(data[index])")
+                        .foregroundColor(.red)
+                        .font(.largeTitle)
+                }
+            }
         }
     }
 }
 
-struct ForEach_Previews: PreviewProvider {
+struct ForEachPrint_Previews: PreviewProvider {
     static var previews: some View {
-        ForEach()
+        ForEachPrint()
     }
 }
